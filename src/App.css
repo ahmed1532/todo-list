@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+:root {
+  /* --gradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 57%, rgba(65,90,153,1) 100%); */
+  --gradient:rgb(86, 86, 86);
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body{
+  background: var(--gradient);
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+}
+form{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 50px;
+ 
+
+}
+.container{
+  margin-top: 100px;
+  margin-inline: auto;
+  margin-top: 100px;
+  width:500px;
+  max-width: 90%;
+  background-color: white;
+  padding: 20px 15px;
+
+}
+.input-field{
+background: var(--gradient);
+color: white;
+padding:2px 4px ;
+}
+.btn{
+background: var(--gradient);
+color: white;
+padding:2px 3px ;
+cursor: pointer;
+}
+.delete-btn{
+  background: var(--gradient);
+color: white;
+border-radius: 50%;
+width: 15px;
+}
+.todo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 15px;
+  
+  
+}
+.todoText{
+  background: var(--gradient);
   color: white;
+padding: 5px 10px 5px 5px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.updated-btn{
+  margin-right: 5px;
+  border-radius: 8px ;
 }
